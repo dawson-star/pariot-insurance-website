@@ -1,14 +1,29 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <div className="mx-auto max-w-5xl px-6 py-20">
-      <h1 className="text-4xl font-bold tracking-tight">
-        Home, Auto & Commercial Insurance in Camp Hill, PA
-      </h1>
-      <p className="mt-6 max-w-2xl text-lg text-gray-600">
-        Patriot Insurance Group helps families and businesses in the
-        Camp Hill area find the right coverage at the right price. We shop
-        multiple carriers so you don&apos;t have to.
-      </p>
+      <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
+        <div>
+          <h1 className="text-4xl font-bold tracking-tight">
+            Home, Auto & Commercial Insurance in Camp Hill, PA
+          </h1>
+          <p className="mt-6 max-w-2xl text-lg text-gray-600">
+            Patriot Insurance Group helps families and businesses in the
+            Camp Hill area find the right coverage at the right price. We shop
+            multiple carriers so you don&apos;t have to.
+          </p>
+        </div>
+        <div className="relative aspect-[1206/1101] w-full overflow-hidden rounded-lg">
+          <Image
+            src="/images/community-sponsorship.jpg"
+            alt="Patriot Insurance Group sponsoring a local community golf outing"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+      </div>
 
       <div className="mt-10 grid gap-6 sm:grid-cols-3">
         <div className="rounded-lg border border-gray-200 p-6">
