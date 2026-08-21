@@ -1,4 +1,5 @@
 import Image from "next/image";
+import CallButton from "./components/CallButton";
 
 export default function Home() {
   return (
@@ -50,12 +51,10 @@ export default function Home() {
       </div>
 
       <div className="mt-12">
-        <a
-          href="tel:+17175791270"
+        <CallButton
+          label="Get a Quote — Call (717) 579-1270"
           className="inline-block rounded-md bg-gray-900 px-6 py-3 text-white font-medium hover:bg-gray-800"
-        >
-          Get a Quote — Call (717) 579-1270
-        </a>
+        />
       </div>
     </div>
   );

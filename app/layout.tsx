@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
+import GoogleTags from "./components/GoogleTags";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -26,6 +27,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col text-gray-900">
+        <GoogleTags />
         <header className="border-b border-gray-200">
           <nav className="mx-auto max-w-5xl flex items-center justify-between px-6 py-4">
             <Link href="/" className="font-semibold text-lg">
