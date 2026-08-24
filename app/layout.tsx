@@ -18,12 +18,13 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Patriot Insurance Group",
   description:
-    "Patriot Insurance Group offers home, auto, and commercial insurance in Camp Hill, PA.",
+    "Patriot Insurance Group offers home, auto, renters, and commercial insurance in Camp Hill, PA.",
 };
 
 const NAV_LINKS = [
   { href: "/auto-insurance", label: "Auto" },
   { href: "/home-insurance", label: "Home" },
+  { href: "/renters-insurance", label: "Renters" },
   { href: "/commercial-insurance", label: "Commercial" },
   { href: "/about", label: "About" },
 ];

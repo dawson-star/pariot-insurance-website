@@ -38,8 +38,8 @@ export default function AutoInsurance() {
         <div className="space-y-4 text-navy/80">
           <p>
             Patriot Insurance Group is an independent insurance agency based
-            in Camp Hill, Pennsylvania, serving home, auto, and commercial
-            insurance clients throughout the area.
+            in Camp Hill, Pennsylvania, serving home, auto, renters, and
+            commercial insurance clients throughout the area.
           </p>
           <p>
             As an independent agency, we work with multiple carriers to

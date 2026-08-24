@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Car, Home as HomeIcon, Building2 } from "lucide-react";
+import { Car, Home as HomeIcon, Building2, KeyRound } from "lucide-react";
 import CallButton from "./components/CallButton";
 
 const SERVICES = [
@@ -15,6 +15,12 @@ const SERVICES = [
     icon: HomeIcon,
     label: "Home Insurance",
     blurb: "Protection against fire, theft, weather, and liability.",
+  },
+  {
+    href: "/renters-insurance",
+    icon: KeyRound,
+    label: "Renters Insurance",
+    blurb: "Coverage for your belongings and liability as a renter.",
   },
   {
     href: "/commercial-insurance",
@@ -51,7 +57,7 @@ export default function Home() {
             </h1>
             <p className="mt-6 max-w-xl text-lg text-navy/70">
               Patriot Insurance Group helps families and businesses in the Camp
-              Hill area find the right home, auto, and commercial coverage — at
+              Hill area find the right home, auto, renters, and commercial coverage — at
               the right price.
             </p>
             <div className="mt-8">
@@ -128,7 +134,7 @@ export default function Home() {
           <h2 className="text-center text-2xl font-bold text-navy">
             What We Cover
           </h2>
-          <div className="mt-10 grid gap-6 sm:grid-cols-3">
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {SERVICES.map((s) => (
               <Link
                 key={s.href}
