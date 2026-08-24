@@ -53,12 +53,12 @@ export default function Home() {
         <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 lg:grid-cols-2 lg:items-center">
           <div>
             <h1 className="text-4xl font-bold tracking-tight text-navy sm:text-5xl">
-              Call my office for a personalized insurance quote.
+              See If You Could Be Paying Less for Insurance
             </h1>
             <p className="mt-6 max-w-xl text-lg text-navy/70">
-              Patriot Insurance Group helps families and businesses in the Camp
-              Hill area find the right home, auto, renters, and commercial coverage — at
-              the right price.
+              I help Pennsylvania homeowners, drivers, renters, and business
+              owners compare coverage and rates from multiple insurance
+              companies — with no pressure to switch.
             </p>
             <div className="mt-8">
               <CallButton label="Call (717) 579-1270" />
