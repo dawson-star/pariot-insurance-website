@@ -9,24 +9,23 @@ export const metadata: Metadata = {
 export default function AutoInsurance() {
   return (
     <div className="mx-auto max-w-3xl px-6 py-20">
-      <h1 className="text-3xl font-bold tracking-tight">
+      <h1 className="text-3xl font-bold tracking-tight text-navy">
         Auto Insurance in Camp Hill, PA
       </h1>
-      <p className="mt-6 text-gray-700">
+      <p className="mt-6 text-navy/80">
         We compare coverage and pricing across multiple carriers to help you
         find the right auto policy — liability, collision, and comprehensive
         coverage tailored to how you drive.
       </p>
       <div className="mt-10">
-        <CallButton
-          label="Get a Quote — Call (717) 579-1270"
-          className="inline-block rounded-md bg-gray-900 px-6 py-3 text-white font-medium hover:bg-gray-800"
-        />
+        <CallButton label="Get a Quote — Call (717) 579-1270" />
       </div>
 
-      <hr className="mt-16 border-gray-200" />
+      <hr className="mt-16 border-navy/10" />
 
-      <h2 className="mt-16 text-2xl font-bold tracking-tight">About Us</h2>
+      <h2 className="mt-16 text-2xl font-bold tracking-tight text-navy">
+        About Us
+      </h2>
       <div className="mt-8 flex flex-col gap-6 sm:flex-row sm:items-start">
         <div className="relative h-40 w-32 flex-shrink-0 overflow-hidden rounded-lg sm:h-48 sm:w-[157px]">
           <Image
@@ -36,7 +35,7 @@ export default function AutoInsurance() {
             className="object-cover"
           />
         </div>
-        <div className="space-y-4 text-gray-700">
+        <div className="space-y-4 text-navy/80">
           <p>
             Patriot Insurance Group is an independent insurance agency based
             in Camp Hill, Pennsylvania, serving home, auto, and commercial
@@ -50,8 +49,10 @@ export default function AutoInsurance() {
         </div>
       </div>
 
-      <h2 className="mt-12 text-xl font-semibold">Involved in Our Community</h2>
-      <div className="mt-4 space-y-4 text-gray-700">
+      <h2 className="mt-12 text-xl font-semibold text-navy">
+        Involved in Our Community
+      </h2>
+      <div className="mt-4 space-y-4 text-navy/80">
         <p>
           We believe in showing up for the Camp Hill community, not just
           insuring it — from sponsoring local events to volunteering our
@@ -67,18 +68,13 @@ export default function AutoInsurance() {
         </div>
       </div>
 
-      <h2 className="mt-10 text-xl font-semibold">Contact</h2>
-      <div className="mt-4 text-gray-700 space-y-1">
+      <h2 className="mt-10 text-xl font-semibold text-navy">Contact</h2>
+      <div className="mt-4 space-y-1 text-navy/80">
         <p>Patriot Insurance Group</p>
         <p>4242 Carlisle Pike, Ste 106, Camp Hill, PA 17011</p>
-        <p>
-          <a
-            href="mailto:dawson@patriotinsgroup.com"
-            className="hover:underline"
-          >
-            dawson@patriotinsgroup.com
-          </a>
-        </p>
+      </div>
+      <div className="mt-6">
+        <CallButton label="Call (717) 579-1270" />
       </div>
     </div>
   );
